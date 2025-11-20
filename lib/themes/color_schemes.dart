@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// The seed color used to generate the color schemes.
-const Color seedColor = Colors.orange;
+const Color seedColor = Colors.indigo;
 
 /// The color schemes for the app.
 class AppColorScheme {
