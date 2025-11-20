@@ -1,4 +1,4 @@
-import 'package:expense_tracker2/expenses.dart';
+import 'package:expense_tracker2/widgets/expenses.dart';
 import 'package:flutter/material.dart';
 
 /// The home screen of the application.
