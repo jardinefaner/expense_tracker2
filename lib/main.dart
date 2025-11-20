@@ -4,6 +4,7 @@ import 'home_screen.dart';
 
 /// The entry point of the application.
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
