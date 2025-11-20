@@ -1,6 +1,11 @@
-# expense_tracker2
+# Expense Tracker
 
-A new Flutter project.
+A Flutter application to track personal expenses.
+
+## Features
+
+- **Track Expenses**: Add and view your daily expenses.
+- **Simple Interface**: Easy to use UI.
 
 ## Getting Started
 
