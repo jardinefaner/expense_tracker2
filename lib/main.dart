@@ -1,10 +1,12 @@
 import 'package:expense_tracker2/themes/app_themes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'widgets/home_screen.dart';
 
 /// The entry point of the application.
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(const MyApp());
 }
 
