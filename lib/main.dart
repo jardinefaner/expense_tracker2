@@ -1,6 +1,6 @@
 import 'package:expense_tracker2/themes/app_themes.dart';
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'widgets/home_screen.dart';
 
 /// The entry point of the application.
 void main() {
