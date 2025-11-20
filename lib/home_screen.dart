@@ -1,3 +1,4 @@
+import 'package:expense_tracker2/expenses.dart';
 import 'package:flutter/material.dart';
 
 /// The home screen of the application.
@@ -10,9 +11,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text('Hello, world!'),
-      ),
+      body: Expenses(),
     );
   }
 }
