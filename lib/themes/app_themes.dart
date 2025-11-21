@@ -5,14 +5,14 @@ import 'package:flutter/material.dart';
 /// The app's theme data.
 class AppTheme {
   /// The light theme.
-  static ThemeData lightTheme = ThemeData(
+  static ThemeData lightTheme = ThemeData.from(
     useMaterial3: true,
     colorScheme: AppColorScheme.lightColorScheme,
     textTheme: AppTextTheme.lightTextTheme,
   );
 
   /// The dark theme.
-  static ThemeData darkTheme = ThemeData(
+  static ThemeData darkTheme = ThemeData.from(
     useMaterial3: true,
     colorScheme: AppColorScheme.darkColorScheme,
     textTheme: AppTextTheme.darkTextTheme,
