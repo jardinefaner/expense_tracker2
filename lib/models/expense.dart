@@ -66,3 +66,37 @@ class Expense {
     return formatter.format(date);
   }
 }
+
+/// Represents a bucket of expenses for a specific category.
+///
+/// This class is used to group expenses by category and calculate their total amounts.
+class ExpenseBucket {
+  /// Creates a new [ExpenseBucket] with the given category and expenses.
+  ///
+  /// The [expenses] list is filtered to only include expenses with the given [category].
+  const ExpenseBucket({required this.category, required this.expenses});
+
+  /// The [allExpenses] list is used to filter the expenses.
+  ExpenseBucket.forCategory(List<Expense> allExpenses, this.category)
+    : expenses = allExpenses
+          .where((expense) => expense.category == category)
+          .toList();
+  //// The category of the expenses in this bucket.
+  final Category category;
+
+  /// The list of expenses in this bucket.
+  ///
+  /// This list is filtered to only include expenses with the given [category].
+  ///
+  final List<Expense> expenses;
+
+  ///
+  double get totalExpenses {
+    double sum = 0;
+
+    for (final expense in expenses) {
+      sum += expense.amount;
+    }
+    return sum;
+  }
+}
