@@ -1,3 +1,4 @@
+import 'package:expense_tracker2/widgets/chart/chart.dart';
 import 'package:expense_tracker2/widgets/expenses_list/expenses_list.dart';
 import 'package:expense_tracker2/models/expense.dart';
 import 'package:expense_tracker2/widgets/new_expense.dart';
@@ -72,7 +73,7 @@ class _ExpensesState extends State<Expenses> {
   @override
   Widget build(BuildContext context) {
     Widget mainContent = const Center(
-      child: const Text('No expenses found. Start adding some!'),
+      child: Text('No expenses found. Start adding some!'),
     );
 
     if (_registeredExpenses.isNotEmpty) {
@@ -95,9 +96,8 @@ class _ExpensesState extends State<Expenses> {
       body: SafeArea(
         child: Column(
           children: [
-            Text('The chart', style: Theme.of(context).textTheme.titleLarge),
+            Chart(expenses: _registeredExpenses),
             Expanded(child: mainContent),
-            const Text('The new expense'),
           ],
         ),
       ),
