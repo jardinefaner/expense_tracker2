@@ -24,7 +24,7 @@ This project is a starting point for a Flutter application.
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/expense_tracker2.git
+    git clone https://github.com/jardinefaner/expense_tracker2.git
     ```
 2.  Navigate to the project directory:
     ```bash
